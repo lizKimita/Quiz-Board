@@ -10,67 +10,67 @@
   </head>
   <body>
     <div class="container">
-    <h1>Quiz Board</h1>
-    <p>Hey, lets see how much you have learnt about javascript and jquery. Please enter your details below!</p>
-    <div id="Intro">
-      <form id="stest">
-        <div class="form-group">
-          <label for="studentsname">Please enter your name here:</label>
-          <input id="studentsname" class="form-control" type="text">
+      <h1>Quiz Board</h1>
+      <p>Hey, lets see how much you have learnt about javascript and jquery. Please enter your details below!</p>
+        <div id="Intro">
+          <form id="stest">
+            <div class="form-group">
+              <label for="studentsname">Please enter your name here:</label>
+              <input id="studentsname" class="form-control" type="text" required>
+            </div>
+            <button type="submit" class="btn btn-info"> Start Test!</button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-info"> Start Test!</button>
+        <br>
+      <form id ="qboxes">
+        <div class="radio">
+          <label for="Question1"> <strong>What is jQuery?</strong> </label>
+          <br>
+          <input type="radio" name="Question1" value="5" required> jQuery is a library of JavaScript Functions.<br>
+          <input type="radio" name="Question1" value="0"> jQuery stands for Structured Query Language. <br>
+          <input type="radio" name="Question1" value="0"> jQuery stands for Cascading Style Sheets. <br>
+          <input type="radio" name="Question1" value="0"> jQuery communication between computers on the Internet.<br>
+
+          <br>
+          <label for="Question2"> <strong>When linking JavaScript in HTML it should start with?</strong> </label>
+          <br>
+          <input type="radio" name="Question2" value="0" required> Do_script <br>
+          <input type="radio" name="Question2" value="0"> Start_script <br>
+          <input type="radio" name="Question2" value="5"> script <br>
+          <input type="radio" name="Question2" value="0"> scr <br>
+          <br>
+
+          <label for="Question3"> <strong> What is the each function used for? </strong> </label>
+          <br>
+          <input type="radio" name="Question3" value="0" required> The Each function allows you to loop though every element in a parent element. <br>
+          <input type="radio" name="Question3" value="0"> The Each function allows you to put the word "Each" into each element. <br>
+          <input type="radio" name="Question3" value="5"> The Each function allows you to loop through different elements with a class or ID. <br>
+          <input type="radio" name="Question3" value="0"> None of the above.<br>
+          <br>
+          <label for="Question4"> <strong>Which of the following asserts that the variables `A`, `B`, and `C` have unequal values?</strong> </label>
+          <br>
+          <input type="radio" name="Question4" value="0"required> A !== B || B !== C <br>
+          <input type="radio" name="Question4" value="0"> A !== B & B !== C <br>
+          <input type="radio" name="Question4" value="5">  A !== B && B !== C && A !== C <br>
+          <input type="radio" name="Question4" value="0"> A !== B <br>
+          <br>
+          <label for="Question5"> <strong> What character ends a javascript statement? </strong> </label>
+          <br>
+          <input type="radio" name="Question5" value="0"required> An exclamation mark “!” <br>
+          <input type="radio" name="Question5" value="5"> A semicolon “;” <br>
+          <input type="radio" name="Question5" value="0"> A period “.” <br>
+          <input type="radio" name="Question5" value="0"> A colon “:”<br>
+          <br>
+        </div>
+        <button type="submit" class="btn btn-info"> Click Here to reveal your marks!</button>
+        <button type="reset" class="btn btn-warning" id ="reload">Retake the Test</button>
+        <br>
+        <div id="marks"></div>
+        <br>
+        <div id="comment"></div>
       </form>
+      <br>
+      <br>
     </div>
-    <br>
-    <form id ="qboxes">
-<div class="radio">
-      <label for="Question1"> <strong>What is jQuery?</strong> </label>
-      <br>
-      <input type="radio" name="Question1" value="5" required> jQuery is a library of JavaScript Functions.<br>
-      <input type="radio" name="Question1" value="0"> jQuery stands for Structured Query Language. <br>
-      <input type="radio" name="Question1" value="0"> jQuery stands for Cascading Style Sheets. <br>
-      <input type="radio" name="Question1" value="0"> jQuery communication between computers on the Internet.<br>
-
-      <br>
-      <label for="Question2"> <strong>When linking JavaScript in HTML it should start with?</strong> </label>
-      <br>
-      <input type="radio" name="Question2" value="0" required> Do_script <br>
-      <input type="radio" name="Question2" value="0"> Start_script <br>
-      <input type="radio" name="Question2" value="5"> script <br>
-      <input type="radio" name="Question2" value="0"> scr <br>
-      <br>
-
-      <label for="Question3"> <strong> What is the each function used for? </strong> </label>
-      <br>
-      <input type="radio" name="Question3" value="0" required> The Each function allows you to loop though every element in a parent element. <br>
-      <input type="radio" name="Question3" value="0"> The Each function allows you to put the word "Each" into each element. <br>
-      <input type="radio" name="Question3" value="5"> The Each function allows you to loop through different elements with a class or ID. <br>
-      <input type="radio" name="Question3" value="0"> None of the above.<br>
-      <br>
-      <label for="Question4"> <strong>Which of the following asserts that the variables `A`, `B`, and `C` have unequal values?</strong> </label>
-      <br>
-      <input type="radio" name="Question4" value="0"required> A !== B || B !== C <br>
-      <input type="radio" name="Question4" value="0"> A !== B & B !== C <br>
-      <input type="radio" name="Question4" value="5">  A !== B && B !== C && A !== C <br>
-      <input type="radio" name="Question4" value="0"> A !== B <br>
-      <br>
-      <label for="Question5"> <strong> What character ends a javascript statement? </strong> </label>
-      <br>
-      <input type="radio" name="Question5" value="0"required> An exclamation mark “!” <br>
-      <input type="radio" name="Question5" value="5"> A semicolon “;” <br>
-      <input type="radio" name="Question5" value="0"> A period “.” <br>
-      <input type="radio" name="Question5" value="0"> A colon “:”<br>
-      <br>
-</div>
-<button type="submit" class="btn btn-info"> Click Here to reveal your marks!</button>
-<button type="reset" class="btn btn-warning" id ="reload">Retake the Test</button>
-    <br>
-    <div id="marks"></div>
-    <br>
-    <div id="comment"></div>
-</form>
-<br>
-<br>
-  </div>
   </body>
 </html>
