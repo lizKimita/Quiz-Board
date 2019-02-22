@@ -20,7 +20,7 @@ $(document).ready(function(){
     $("#marks").empty();
     $("#comment").empty();
   });
-  
+
     $("form#stest").submit(function(event){
       event.preventDefault();
       $("#qboxes").slideDown();

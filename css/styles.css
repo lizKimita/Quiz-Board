@@ -1,3 +1,6 @@
 #qboxes {
   display: none;
 }
+label {
+  font-size: 150%;
+}
