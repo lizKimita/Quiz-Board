@@ -11,13 +11,23 @@ This is a website that can be used by students to test their knowledge of javasc
 * When all the questions have been answered, and the user is satisfied with the answers given, he/she should click on the "click here to reveal your marks button".
 * The users results will then be revealed.
 
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+## Program Specifications
+|User Input            |Value/ Marks    |Percentage Marks  |
+|----------------------|----------------|------------------|
+|Incorrect Answer      |      0         |    0%            |
+|----------------------|----------------|------------------|
+|Correct Answer        |      5         |    20%           |
+|----------------------|----------------|------------------|
+
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+There are no known bugs in the Quiz Board.
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+
+This program has been built using HTML to write the content, CSS for styling purposes, javasript to create the business logic and the user- interface, ensuring that the program works and depending on the user's input, the output given is accurate and Markdown for the README page.
+
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+For more information, questions,or help using the program, get in touch with me on +254 726 047102 or email: kimita.wanjiku@gmail.com.
+
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+MIT
+Copyright (c) 2019 **Elizabeth Wanjiku Kimita**
