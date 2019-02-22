@@ -10,6 +10,10 @@ $(document).ready(function(){
     $("#marks").text("You scored "+ total + "%");
     if (total >= 80) $("#comment").text ("Excellent Performance!");
     else if (total <= 50)$("#comment").text ("Poor performance, please retake the test!");
-    else $("#comment").text ("Fair performance!")
+    else $("#comment").text ("Fair performance!");
+  });
+  $("#reload").click(function(){
+    $("#marks").empty();
+    $("#comment").empty();
   });
 });
