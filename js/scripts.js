@@ -10,3 +10,6 @@ $(document).ready(function(){
     $("#marks").text("You scored "+ total + "%");
   });
 });
+$("#comment").text ("Excellent Performance")
+$("#comment").text ("Fair performance")
+$("#comment").text ("Poor performance, please retake the test")
