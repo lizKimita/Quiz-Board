@@ -13,10 +13,9 @@ This is a website that can be used by students to test their knowledge of javasc
 
 ## Program Specifications
 |User Input            |Value/ Marks    |Percentage Marks  |
-|----------------------|----------------|------------------|
-|Incorrect Answer      |      0         |    0%            |
-|----------------------|----------------|------------------|
-|Correct Answer        |      5         |    20%           |
+|:--------------------:|:--------------:|:----------------:|
+|Incorrect Answer      |      0         |      0%          |
+|Correct Answer        |      5         |      20%         |
 |----------------------|----------------|------------------|
 
 ## Known Bugs
