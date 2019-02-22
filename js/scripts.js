@@ -12,7 +12,7 @@ $(document).ready(function(){
     $("#marks").text("Hello "+name+" "+",you scored "+ total + "%");
 
     if (total >= 80) $("#comment").text ("Excellent Performance!Congratulations!");
-    else if (total <= 50)$("#comment").text ("Oh no! This is poor performance, please retake the test!");
+    else if (total <= 50)$("#comment").text ("Oh no! This is a poor performance, please retake the test!");
     else $("#comment").text ("Fair performance!");
   });
 

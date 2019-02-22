@@ -4,3 +4,14 @@
 label {
   font-size: 150%;
 }
+#heading {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-image: url("../images/quiz5.jpeg");
+}
+.jumbotron {
+  font-weight: bold;
+  image
+}
