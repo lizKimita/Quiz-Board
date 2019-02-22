@@ -16,7 +16,7 @@ This is a website that can be used by students to test their knowledge of javasc
 |:--------------------:|:--------------:|:----------------:|
 |Incorrect Answer      |      0         |      0%          |
 |Correct Answer        |      5         |      20%         |
-|----------------------|----------------|------------------|
+
 
 ## Known Bugs
 There are no known bugs in the Quiz Board.
