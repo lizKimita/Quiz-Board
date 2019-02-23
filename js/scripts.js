@@ -1,3 +1,4 @@
+//USER INTERFACE(FRONT-END)
 $(document).ready(function(){
   $("form#qboxes").submit(function(event){
     event.preventDefault();
@@ -10,6 +11,7 @@ $(document).ready(function(){
     var name=$("input#studentsname").val();
     var total = ((Q1+Q2+Q3+Q4+Q5)/25*100);
     $("#marks").text ("Hello "+name+" "+",you scored "+ total + "%");
+//BUSINESS LOGIC(BACKEND)
 
     if (total >= 80) $("#comment").text ("Excellent Performance!Congratulations!");
     else if (total <= 50)$("#comment").text ("Oh no! You have performed poorly, please retake the test!");
