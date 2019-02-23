@@ -24,6 +24,8 @@ $(document).ready(function(){
     $("#reload").click(function(){
       $("#marks").empty();
       $("#comment").empty();
+      $("#reload").hide();
+
   });
 
     $("form#stest").submit(function(event){
