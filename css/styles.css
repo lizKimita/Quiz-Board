@@ -5,7 +5,7 @@ label {
   font-size: 150%;
 }
 #heading {
-  font-family: sans-serif;
+  font-family: Helvetica;
   text-align: center;
 }
 body {
@@ -14,4 +14,13 @@ body {
 .jumbotron {
   font-weight: bold;
   background-color:teal;
+}
+#marks {
+  font-weight: bold;
+}
+#comment {
+  font-weight: bold;
+}
+#reload {
+  display: none;
 }

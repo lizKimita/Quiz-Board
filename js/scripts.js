@@ -9,20 +9,24 @@ $(document).ready(function(){
 
     var name=$("input#studentsname").val();
     var total = ((Q1+Q2+Q3+Q4+Q5)/25*100);
-    $("#marks").text("Hello "+name+" "+",you scored "+ total + "%");
+    $("#marks").text ("Hello "+name+" "+",you scored "+ total + "%");
 
     if (total >= 80) $("#comment").text ("Excellent Performance!Congratulations!");
     else if (total <= 50)$("#comment").text ("Oh no! This is a poor performance, please retake the test!");
     else $("#comment").text ("Fair performance!");
+
+    if (total <= 50) $("#reload").show();
+       else $("#reload").hide();
   });
 
-  $("#reload").click(function(){
-    $("#marks").empty();
-    $("#comment").empty();
+    $("#reload").click(function(){
+      $("#marks").empty();
+      $("#comment").empty();
   });
 
     $("form#stest").submit(function(event){
       event.preventDefault();
       $("#qboxes").slideDown();
        });
+
 });
