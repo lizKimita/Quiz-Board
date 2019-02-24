@@ -11,8 +11,8 @@ $(document).ready(function(){
     var name=$("input#studentsname").val();
     var total = ((Q1+Q2+Q3+Q4+Q5)/25*100);
     $("#marks").text ("Hello "+name+" "+",you scored "+ total + "%");
-//BUSINESS LOGIC(BACKEND)
 
+//BUSINESS LOGIC(BACKEND)
     if (total >= 80) $("#comment").text ("Excellent Performance!Congratulations!");
     else if (total <= 50)$("#comment").text ("Oh no! You have performed poorly, please retake the test!");
     else $("#comment").text ("Fair performance!");
@@ -25,7 +25,6 @@ $(document).ready(function(){
       $("#marks").empty();
       $("#comment").empty();
       $("#reload").hide();
-
   });
 
     $("form#stest").submit(function(event){
