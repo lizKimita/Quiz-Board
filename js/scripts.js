@@ -26,14 +26,16 @@ $(document).ready(function(){
   function calculateScore (ans1, ans2, ans3, ans4, ans5) {
     return (ans1+ans2+ans3+ans4+ans5)/25*100;
     };
-    
+
   function grades(test) {
     if (test >= 80) {
       $("#comment").text ("Excellent Performance!Congratulations!");
+      $("#reload").hide();
     } else if (test <= 50){
       $("#comment").text ("Oh no! You have performed poorly, please retake the test!");
       $("#reload").show();
     } else {
       $("#comment").text ("Fair performance!");
+      $("#reload").hide();
     }
   };
